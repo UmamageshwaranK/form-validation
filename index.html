@@ -9,20 +9,31 @@
   </head>
   <body>
     <section class="bg-indigo-600 min-h-svh py-10">
-      <div class="bg-white max-w-xl p-5 mx-auto mt-10 space-y-5 rounded">
+      <form
+        class="bg-white max-w-xl p-5 mx-auto mt-10 space-y-5 rounded"
+        id="formEl"
+      >
         <h4 class="font-bold">Request a Courier PickUp!</h4>
-        <div class="grid grid-cols-2 gap-5">
-          <input class="form-input" placeholder="Name" type="text" required />
+        <div class="grid grid-cols-2 gap-x-5">
+          <input
+            class="form-input"
+            placeholder="Name"
+            type="text"
+            id="name"
+            required
+          />
           <input
             class="form-input"
             placeholder="Phone"
-            type="number"
+            type="text"
             min="0"
             required
+            name="Phone"
+            id="phone"
           />
         </div>
 
-        <input type="datetime-local" class="form-input" />
+        <input type="datetime-local" class="form-input" required />
         <textarea
           rows="3"
           cols="20"
@@ -35,9 +46,9 @@
         >
           Create Pickup
         </button>
-      </div>
+      </form>
       <!-- Table for courier pickup -->
-      <div class="bg-white max-w-xl mx-auto p-5 mt-10 rounded">
+      <div class="bg-white max-w-xl mx-auto p-5 mt-10 rounded hidden">
         <div class="space-y-2 my-2">
           <h4 class="font-bold">Courier Request!</h4>
           <table class="table table-fixed border w-full">

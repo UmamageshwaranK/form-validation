@@ -5,3 +5,7 @@
 .form-input{
     @apply bg-gray-200 px-3 rounded py-2 outline-none  block w-full
 }
+
+.form-error{ 
+    @apply text-sm mt-1
+}
