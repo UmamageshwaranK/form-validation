@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courier PickUp</title>
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
+  </head>
+  <body>
+    <section class="bg-indigo-600 min-h-svh py-10">
+      <div class="bg-white max-w-xl p-5 mx-auto mt-10 space-y-5 rounded">
+        <h4 class="font-bold">Request a Courier PickUp!</h4>
+        <div class="grid grid-cols-2 gap-5">
+          <input class="form-input" placeholder="Name" type="text" required />
+          <input
+            class="form-input"
+            placeholder="Phone"
+            type="number"
+            min="0"
+            required
+          />
+        </div>
+
+        <input type="datetime-local" class="form-input" />
+        <textarea
+          rows="3"
+          cols="20"
+          class="resize-none bg-gray-200 w-full outline-none px-3 py-1 rounded"
+          placeholder="Pickup address"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-indigo-500 px-5 w-full py-3 rounded hover:bg-indigo-400 font-semibold"
+        >
+          Create Pickup
+        </button>
+      </div>
+      <!-- Table for courier pickup -->
+      <div class="bg-white max-w-xl mx-auto p-5 mt-10 rounded">
+        <div class="space-y-2 my-2">
+          <h4 class="font-bold">Courier Request!</h4>
+          <table class="table table-fixed border w-full">
+            <tr>
+              <th class="px-2 py-1 border">Customer</th>
+              <th class="px-2 py-1 border">PickUp date</th>
+              <th class="px-2 py-1 border">Address</th>
+            </tr>
+            <tr>
+              <td class="px-2 py-1 border">magesh</td>
+              <td class="px-2 py-1 border">1/2/2001</td>
+              <td class="px-2 py-1 border">chennai</td>
+              <td class="px-2 py-1 border text-center">
+                <button
+                  class="bg-red-500 text-white rounded px-2 hover:bg-red-400 text-sm py-2"
+                >
+                  delete
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="Assets/js/main.js"></script>
+  </body>
+</html>
