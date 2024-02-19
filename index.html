@@ -7,9 +7,11 @@
     <!-- css links -->
     <link rel="stylesheet" type="text/css" href="Assets/css/main.css" />
   </head>
+
   <body>
     <section class="bg-indigo-600 min-h-svh py-10">
       <form
+        method="get"
         class="bg-white max-w-xl p-5 mx-auto mt-10 space-y-5 rounded"
         id="formEl"
       >
@@ -21,30 +23,32 @@
             type="text"
             id="name"
             required
+            name="username"
           />
           <input
             class="form-input"
             placeholder="Phone"
             type="text"
             min="0"
-            required
             name="Phone"
             id="phone"
+            value="0987654321"
+            required
           />
         </div>
 
-        <input type="datetime-local" class="form-input" required />
+        <input type="datetime-local" class="form-input" name="date" required />
         <textarea
           rows="3"
           cols="20"
           class="resize-none bg-gray-200 w-full outline-none px-3 py-1 rounded"
           placeholder="Pickup address"
+          name="Description"
         ></textarea>
         <button
-          type="submit"
-          class="bg-indigo-500 px-5 w-full py-3 rounded hover:bg-indigo-400 font-semibold"
+          class="bg-indigo-500 px-5 w-full py-3 rounded hover:bg-indigo-400 font-semibol"
         >
-          Create Pickup
+          submit
         </button>
       </form>
       <!-- Table for courier pickup -->
@@ -73,6 +77,7 @@
         </div>
       </div>
     </section>
+    <!-- js -->
     <script type="module" src="Assets/js/main.js"></script>
   </body>
 </html>
